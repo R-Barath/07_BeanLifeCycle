@@ -9,10 +9,13 @@ import in.barath.beans.Motor;
 public class AppTest {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
-		Motor motor = context.getBean(Motor.class);
-		motor.doWork();
 
-		ConfigurableApplicationContext cctxt = (ConfigurableApplicationContext) context;
-		cctxt.close();
+		// the below mentioned code for bean life cycle methedology
+		// Motor motor = context.getBean(Motor.class);
+//		motor.doWork();
+//
+//		ConfigurableApplicationContext cctxt = (ConfigurableApplicationContext) context;
+//		cctxt.close();
+//	
 	}
 }
